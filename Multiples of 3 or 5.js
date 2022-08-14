@@ -21,3 +21,15 @@ function solution(number){
   }
   return [...new Set(z.concat(y))].reduce( (a,b) => a + b, 0)
 }
+
+MY SECOND SOLUTION:
+
+function solution(number){
+  let sum = 0
+  
+  for( let i = 0; i < number; i++) {
+    if(i % 3 === 0 || i % 5 === 0) { sum += i}
+  }
+  
+  return sum
+}
